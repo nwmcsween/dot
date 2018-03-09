@@ -1,0 +1,27 @@
+*
+
+# Git
+!.gitattributes
+!.gitignore
+!.gitmodules
+
+# SSH
+!.ssh
+!.ssh/*.pub
+# Per key whitelist for symlinking
+!.ssh/id_ed25519
+
+# Ruby
+!.gemrc
+
+# Shell
+!.profile
+!.profile.d
+!.profile.d/*.sh
+!.profile.d/shrimp
+
+# Vim
+!.SpaceVim
+.SpaceVim/.gitignore
+!.SpaceVim.d
+!.SpaceVim.d/**

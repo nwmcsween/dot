@@ -1,0 +1,6 @@
+[submodule ".profile.d/shrimp"]
+	path = .profile.d/shrimp
+	url = https://github.com/nwmcsween/shrimp.git
+[submodule ".SpaceVim"]
+	path = .SpaceVim
+	url = https://github.com/SpaceVim/SpaceVim.git
