@@ -1,7 +1,7 @@
-if type npm > /dev/null 2>&1; then
-  if [ -d ${NPMPATH:-"$HOME/.npm/bin"} ]; then
-    str_ipush 'PATH' "$NPMPATH" ':'
+if defined npm; then
+  if [ -d "${NPMPATH:="$HOME/.npm/bin"}" ]; then
+    stripush 'PATH' "$NPMPATH" ':'
   else
-    io_puts "NPMPATH isn't a directory"
+    echo "NPMPATH isn't a directory"
   fi
 fi
