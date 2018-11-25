@@ -1,8 +1,6 @@
-if defined go; then
-  if [ -d ${GOPATH:="$HOME/.go"} ]; then
+if type go > /dev/null 2>&1; then
+  if [ ! -z ${GOPATH+x} ] || [ -d ${GOPATH:="$HOME/.go"} ]; then
     export GOPATH
-    stripush 'PATH' "$gopath/bin" ':'
-  else
-    echo "GOPATH isn't a directory"
+    iprepend 'PATH' "$GOPATH/bin" ':'
   fi
 fi

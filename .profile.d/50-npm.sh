@@ -1,7 +1,6 @@
-if defined npm; then
-  if [ -d "${NPMPATH:="$HOME/.npm/bin"}" ]; then
-    stripush 'PATH' "$NPMPATH" ':'
-  else
-    echo "NPMPATH isn't a directory"
+if type npm > /dev/null 2>&1; then
+  if [ ! -z ${NPMPATH+x} ] || [ -d ${NPMPATH:="$HOME/.npm/bin"} ]; then
+    export NPMPATH
+    iprepend 'PATH' "$NPMPATH" ':'
   fi
 fi
