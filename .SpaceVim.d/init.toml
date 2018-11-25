@@ -1,0 +1,85 @@
+#=============================================================================
+# dark_powered.toml --- dark powered configuration example for SpaceVim
+# Copyright (c) 2016-2017 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg at 163.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+[options]
+  bootstrap_before = "user#before"
+  colorscheme = "gruvbox"
+  background = "dark"
+  enable_guicolors = true
+  statusline_separator = "arrow"
+  statusline_inactive_separator = "arrow"
+  buffer_index_type = 4
+  enable_tabline_filetype_icon = true
+  enable_statusline_display_mode = false
+  enable_ale = true
+  enable_neomake = false
+  lint_on_the_fly = true
+
+[[custom_plugins]]
+	name = "vim-scripts/dbext.vim"
+	merged = 0
+
+# Enable autocomplete layer
+[[layers]]
+  name = 'autocomplete'
+  auto-completion-return-key-behavior = "complete"
+  auto-completion-tab-key-behavior = "smart"
+
+[[layers]]
+  name = 'shell'
+  default_position = 'top'
+  default_height = 30
+
+[[layers]]
+  name = 'VersionControl'
+
+[[layers]]
+  name = 'default'
+
+[[layers]]
+  name = "floobits"
+
+[[layers]]
+  name = "lang#asciidoc"
+
+[[layers]]
+  name = "lang#c"
+
+[[layers]]
+  name = "lang#go"
+
+[[layers]]
+  name = "lang#html"
+
+[[layers]]
+  name = "lang#javascript"
+
+[[layers]]
+  name = "lang#java"
+
+[[layers]]
+  name = "lang#lua"
+
+[[layers]]
+  name = "lang#markdown"
+
+[[layers]]
+  name = "lang#ruby"
+
+[[layers]]
+  name = "lang#sh"
+
+[[layers]]
+  name = "lang#vim"
+
+[[layers]]
+  name = "sudo"
+
+[[layers]]
+  name = "tmux"
