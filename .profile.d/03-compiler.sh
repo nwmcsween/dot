@@ -18,7 +18,7 @@ CC_SECURITY="-Wa,--noexecstack -fsanitize-undefined-trap-on-error \
 CC_DEBUG="-fno-ident" #-ggdb
 
 LDFLAGS="-Wl,--as-needed -Wl,--hash-style=both -Wl,-z,defs -Wl,-z,now \
--Wl,-z,relro -Wl,-z,noexecstack -Wl,-icf=safe -Wl,-gc-sections"
+-Wl,-z,relro -Wl,-z,noexecstack"
 #$CC_ARCH $CC_OPTIMIZE $CC_SECURITY $CC_WARNING $CC_DEBUG"
 
 export CFLAGS="$CC_ARCH $CC_OPTIMIZE $CC_SECURITY $CC_WARNING $CC_DEBUG"
