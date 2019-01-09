@@ -8,13 +8,12 @@
 
 # All SpaceVim option below [option] section
 [options]
-  bootstrap_after = "user#after"
   bootstrap_before = "user#before"
   colorscheme = "gruvbox"
   background = "dark"
   enable_guicolors = true
-#statusline_separator = "arrow"
-# statusline_inactive_separator = "arrow"
+  statusline_separator = "arrow"
+  statusline_inactive_separator = "arrow"
   buffer_index_type = 4
   enable_tabline_filetype_icon = true
   enable_statusline_display_mode = false
@@ -84,6 +83,3 @@
 
 [[layers]]
   name = "tmux"
-
-[[layers]]
-  name = "ui"
