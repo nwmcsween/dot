@@ -22,7 +22,7 @@ stripush() {
     return 1
   fi
 
-  eval "$dst=\"\$$dst$sep$src\""
+  eval "$dst=\"$src$sep\$$dst\""
 
   return 0
 }
