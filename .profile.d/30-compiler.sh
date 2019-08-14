@@ -5,7 +5,7 @@ CC_OPTIMIZE="-O2 -finline-functions -pipe \
 CC_WARNING="-Wall -Wformat=2 -Wtype-limits -Werror=nonnull -Wimplicit-int \
 -Werror=char-subscripts -Werror=switch -Werror=return-type -Werror=init-self \
 -Wpointer-sign -Wshadow -Werror=implicit-function-declaration \
--Werror=misleading-indentation -Werror=missing-braces -Werror=sequence-point \
+-Werror=misleading-indentation -Werror=sequence-point \
 -Werror=shift-count-negative -Werror=shift-count-overflow -Wswitch \
 -Wstrict-aliasing -Wstrict-overflow -Werror=array-bounds -Werror=trampolines \
 -Wtype-limits -Wbad-function-cast -Werror=sizeof-pointer-memaccess \

@@ -1,4 +1,4 @@
-alias paste="curl -F c=@- https://ptpb.pw/?u=1"
+alias paste="curl -F file=@- https://0x0.st"
 alias gdot='/usr/bin/env git --git-dir=$HOME/pj/dot --work-tree=$HOME'
 alias ls='ls --color=auto'
 alias l='ls --color=auto'
