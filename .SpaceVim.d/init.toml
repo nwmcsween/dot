@@ -8,18 +8,20 @@
 
 # All SpaceVim option below [option] section
 [options]
-  bootstrap_before = "user#before"
-  colorscheme = "gruvbox"
   background = "dark"
-  enable_guicolors = true
-  statusline_separator = "arrow"
-  statusline_inactive_separator = "arrow"
+  bootstrap_after = "user#after"
+  bootstrap_before = "user#before"
   buffer_index_type = 4
-  enable_tabline_filetype_icon = true
-  enable_statusline_display_mode = false
+  colorscheme = "gruvbox"
   enable_ale = true
+  enable_guicolors = true
   enable_neomake = false
+  enable_statusline_display_mode = false
+  enable_tabline_filetype_icon = true
+  expand_tab = false
   lint_on_the_fly = true
+  statusline_inactive_separator = "arrow"
+  statusline_separator = "arrow"
 
 [[custom_plugins]]
 	name = "vim-scripts/dbext.vim"
@@ -83,3 +85,6 @@
 
 [[layers]]
   name = "tmux"
+
+[[layers]]
+	name = "lsp"
