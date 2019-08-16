@@ -1,6 +1,7 @@
 *
 
 # Git
+!.gitconfig
 !.gitattributes
 !.gitignore
 !.gitmodules
@@ -21,7 +22,10 @@
 !.profile.d/shrimp
 
 # Vim
-!.SpaceVim
-.SpaceVim/.gitignore
 !.SpaceVim.d
 !.SpaceVim.d/**
+.SpaceVim.d/package-lock.json
+
+# Tmux
+!.tmux.conf
+!.tmux.conf.local
