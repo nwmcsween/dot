@@ -22,6 +22,10 @@
 
 # Vim
 !.SpaceVim
-.SpaceVim/.gitignore
 !.SpaceVim.d
 !.SpaceVim.d/**
+
+# Tmux
+!.tmux
+!.tmux.conf
+!.tmux.conf.local
