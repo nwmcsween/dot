@@ -38,7 +38,7 @@ bind-key Q detach
 bind-key q detach
 bind-key R refresh-client
 bind-key r refresh-client
-bind-key \ split-window -h
+bind-key \\ split-window -h
 bind-key | split-window -h
 bind-key - split-window -v
 bind-key _ split-window -v
