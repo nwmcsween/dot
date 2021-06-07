@@ -1,0 +1,57 @@
+# tmux.conf
+unbind-key '"'
+unbind-key '#'
+unbind-key &
+unbind-key ,
+unbind-key .
+unbind-key -
+unbind-key :
+unbind-key =
+unbind-key ?
+unbind-key [
+unbind-key '\'
+unbind-key ]
+unbind-key c
+unbind-key d
+unbind-key l
+unbind-key n
+unbind-key o
+unbind-key p
+unbind-key r
+unbind-key s
+unbind-key t
+unbind-key w
+unbind-key x
+unbind-key h
+unbind-key f
+unbind-key M-Up
+unbind-key M-Down
+unbind-key C-Up
+unbind-key C-Down
+unbind-key C-b
+bind-key C new-window
+bind-key c new-window
+bind-key D kill-window
+bind-key d kill-window
+bind-key : command-prompt
+bind-key Q detach
+bind-key q detach
+bind-key R refresh-client
+bind-key r refresh-client
+bind-key \ split-window -h
+bind-key | split-window -h
+bind-key - split-window -v
+bind-key _ split-window -v
+bind-key > next-window
+bind-key . next-window
+bind-key , previous-window
+bind-key < previous-window
+bind-key ? list-windows
+
+set -g default-terminal "tmux-256color"
+set -ga terminal-overrides ",*256col*:Tc"
+
+tmux_conf_theme_left_separator_main='\uE0B0'
+tmux_conf_theme_left_separator_sub='\uE0B1'
+tmux_conf_theme_right_separator_main='\uE0B2'
+tmux_conf_theme_right_separator_sub='\uE0B3'
