@@ -1,0 +1,67 @@
+[alias]
+	a = add
+	ar = archive
+	au = add --update
+	b = branch
+	bd = branch --delete
+	bf = branch --force
+	bi = bisect
+	bu = bundle
+	bv=  branch -v
+	c = commit
+	ca = commit --amend
+	cl = clone
+	clr = clone --recursive
+	co = checkout
+	cob = checkout -b
+	com = checkout master
+	cp = cherry-pick
+	d = diff
+	dc = diff --cached
+	ds = diff --staged
+	i = init
+	l = log
+	ll = log --decorate --stat
+	lp = log --patch
+	m = merge
+	p = pull
+	r = reset
+	sa = stash apply
+	sh = show
+	sl = stash list
+	sm = submodule
+	smi = submodule --init
+	sp = stash pop
+	ss = stash save
+	st = status
+	t = tag
+	wc = whatchanged
+	wt = worktree
+
+[user]
+	name = Nathan McSween
+	email = nwm@ioc.tl
+
+[branch]
+	autosetuprebase = always
+
+[core]
+	splitindex = true
+	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+	untrackedCache = true
+
+[rerere]
+	autoupdate = true
+	enabled = true
+
+[merge]
+	log = true
+
+[diff]
+	algorithm = minimal
+
+[status]
+	submodulesummary = true
+
+[includeIf "gitdir:~/pj/llsr"]
+	path = ~/.gitconfig.d/llsr
