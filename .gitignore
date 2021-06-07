@@ -27,5 +27,6 @@
 !.SpaceVim.d/**
 
 # Tmux
+!.tmux
 !.tmux.conf
 !.tmux.conf.local
