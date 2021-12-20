@@ -6,12 +6,6 @@
 !.gitignore
 !.gitmodules
 
-# SSH
-!.ssh
-!.ssh/*.pub
-# Per key whitelist for symlinking
-!.ssh/id_ed25519
-
 # Ruby
 !.gemrc
 
