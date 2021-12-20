@@ -38,14 +38,11 @@
 	wc = whatchanged
 	wt = worktree
 
-[user]
-	name = Nathan McSween
-	email = nwm@ioc.tl
-
 [branch]
 	autosetuprebase = always
 
 [core]
+	autocrlf = true
 	splitindex = true
 	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
 	untrackedCache = true
@@ -64,5 +61,17 @@
 [status]
 	submodulesummary = true
 
-[includeIf "gitdir:~/pj/llsr"]
+[includeIf "gitdir:~/pj/llsr/"]
 	path = ~/.gitconfig.d/llsr
+[includeIf "gitdir:~/Documents/pj/llsr/"]
+	path = ~/.gitconfig.d/llsr
+
+[includeIf "gitdir:~/pj/brighthealth/"]
+	path = ~/.gitconfig.d/brighthealth
+[includeIf "gitdir:~/Documents/pj/brighthealth/"]
+	path = ~/.gitconfig.d/brighthealth
+
+[includeIf "gitdir:~/pj/personal/"]
+	path = ~/.gitconfig.d/personal
+[includeIf "gitdir:~/Documents/pj/personal/"]
+	path = ~/.gitconfig.d/personal
