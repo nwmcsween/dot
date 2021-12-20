@@ -55,6 +55,7 @@
 	enabled = true
 
 [merge]
+	ff = only
 	log = true
 
 [diff]
